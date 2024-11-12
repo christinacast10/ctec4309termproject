@@ -1,18 +1,47 @@
 <?php
-include 'shared.php';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Midnight Hour Movers</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-<?php
-/////NAV/////
-echo $Nav;
+session_start();
+include("dbconn.inc.php"); // Database connection
+include("shared.php"); // Shared contents like header, footer, etc.
+$conn = dbConnect();
+
+$successMessage = ""; // To show a success message after submission
+$errorMessage = ""; // To show an error if submission fails
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sanitize and validate input fields
+    $Name = $conn->real_escape_string(trim($_POST['Name']));
+    $Email = $conn->real_escape_string(trim($_POST['Email']));
+    $Phone = $conn->real_escape_string(trim($_POST['Phone']));
+    $InquiryType = $conn->real_escape_string(trim($_POST['InquiryType']));
+    $Message = $conn->real_escape_string(trim($_POST['message']));
+    
+    // Set CreatedAt to the current timestamp
+    $CreatedAt = date("Y-m-d H:i:s");
+
+    // Prepare and execute the insert query
+    $sql = "INSERT INTO MidnightContact (Name, Email, Phone, InquiryType, Message, CreatedAt) 
+            VALUES ('$Name', '$Email', '$Phone', '$InquiryType', '$Message', '$CreatedAt')";
+
+    if ($conn->query($sql) === TRUE) {
+        $_SESSION['InquiryType'] = $InquiryType; // Save InquiryType to session
+        $successMessage = "Thank you! Your inquiry has been submitted successfully.";
+    } else {
+        $errorMessage = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+
+// Close the connection
+$conn->close();
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<?php echo $Head ?>
+<body>
+<?php
+echo $Nav;
+?>
 
 <section class="contact-section">
     <h2 class="contact-heading">Contact Us</h2>
@@ -47,32 +76,61 @@ echo $Nav;
         </div>
     </div>
 
-    <form action="process_form.php" method="POST" class="contact-form">
-    <h3>Contact Us</h3>
-    
-    <label for="name">Name (Required):</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email (Required):</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="phone">Phone (Optional):</label>
-    <input type="text" id="phone" name="phone">
-    
-    <label for="inquiry_type">Inquiry Type (Required):</label>
-    <select id="inquiry_type" name="inquiry_type" required>
-        <option value="General Inquiry">General Inquiry</option>
-        <option value="Moving Quote">Moving Quote</option>
-        <option value="Feedback">Feedback</option>
-        <option value="Job Inquiry">Job Inquiry</option>
-        <option value="Support">Support</option>
-    </select>
-    
-    <label for="message">Message (Required):</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Submit</button>
-</form>
+    <!-- Contact Form Section -->
+    <form action="" method="POST" class="contact-form">
+        <h3>Contact Us</h3>
+
+        <?php if (isset($successMessage)) { ?>
+        <p class="success"><?php echo $successMessage; ?></p>
+
+        <?php
+        // Check if the session has an InquiryType and display the corresponding button
+        if (isset($_SESSION['InquiryType'])) {
+            if ($_SESSION['InquiryType'] == "Out of State Moving Quote") {
+                echo "<a href='out-of-state-moving.php' class='btn btn-primary'>Get Your Out of State Moving Quote</a>";
+            } elseif ($_SESSION['InquiryType'] == "Storage Quote") {
+                echo "<a href='storage-services.php' class='btn btn-primary'>Learn More About Storage Services</a>";
+            } elseif ($_SESSION['InquiryType'] == "General Inquiry") {
+                echo "<a href='faq.php' class='btn btn-primary'>Check Out Our Frequently Asked Questions</a>";
+            }
+            // Clear the session variable
+            unset($_SESSION['InquiryType']);
+        }
+        ?>
+    <?php } elseif (isset($errorMessage)) { ?>
+        <p class="error"><?php echo $errorMessage; ?></p>
+    <?php } ?>
+
+
+        <br><br>
+        <input type="hidden" name="SubmissionID" id="SubmissionID">
+        
+        <label for="name">Name (Required):</label>
+        <input type="text" id="Name" name="Name" required>
+        
+        <label for="email">Email (Required):</label>
+        <input type="email" id="Email" name="Email" required>
+        
+        <label for="phone">Phone (Optional):</label>
+        <input type="text" id="Phone" name="Phone">
+        
+        <label for="inquiry_type">Inquiry Type (Required):</label>
+        <select id="inquiry_type" name="InquiryType" required>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Moving Quote">Moving Quote</option>
+            <option value="Out of State Moving Quote">Out of State Moving Quote</option>
+            <option value="Storage Quote">Storage Quote</option>
+            <option value="Labor Only">Labor Only</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Job Inquiry">Job Inquiry</option>
+            <option value="Support">Support</option>
+        </select>
+        
+        <label for="message">Message (Required):</label>
+        <textarea id="Message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
 
     <!-- Local Reviews -->
     <div class="reviews-section">
