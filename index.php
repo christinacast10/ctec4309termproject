@@ -3,10 +3,7 @@ include 'shared.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Midnight Hour Movers</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+<?php echo $Head ?>
 <body>
 
 <?php
@@ -20,7 +17,8 @@ echo $HeroSlideshow;
 ?> 
 
 <section class="review-section">
-    <h2>What Our Clients Are Saying</h2>
+    <h2>See Why Our Customers Love Midnight Hour Moving & Storage!</h2>
+    <p>We’re proud to deliver top-rated moving services that make every move easier, smoother, and stress-free.</p>
     <div class="reviews-container">
 
         <div class="review-card">
@@ -394,7 +392,7 @@ echo $HeroSlideshow;
                 </div>
             </li>
 
-=            <li class="faq-item">
+            <li class="faq-item">
                 <input type="radio" name="accordion" id="sixteenth">
                 <label for="sixteenth" class="faq-label">
                     <span class="question">Do you use enclosed trailers?</span>

@@ -13,7 +13,8 @@ $HeroSlideshow = "
             <img src='Slideshow1.jpg' alt='Slideshow1'>
             <div class='hero-text'>
                 <h1>Midnight Hour Movers</h1>
-                <p>Your trusted moving service, anytime, anywhere!</p>
+                <p>Moving Made Easy in Dallas, TX – Trusted Local Movers Near You!</p>
+                <a href='quote.php' class='hero-button'>Get a Quote Today</a>
             </div>
         </div>
     </div>
@@ -45,6 +46,7 @@ $HeroSlideshow = "
 $Nav = "
 <nav class='navbar'> 
     <ul>
+        <li class='logo'><a href='index.php'><img src='midnightnewlogow.png' alt='Midnight Hour Moving Logo'></a></li>
         <li><a href='index.php'>Home</a></li>
         <li><a href='services.php'>Services</a></li>
         <li><a href='about.php'>About Us</a></li>
