@@ -87,9 +87,9 @@ echo $Nav;
         // Check if the session has an InquiryType and display the corresponding button
         if (isset($_SESSION['InquiryType'])) {
             if ($_SESSION['InquiryType'] == "Out of State Moving Quote") {
-                echo "<a href='out-of-state-moving.php' class='btn btn-primary'>Get Your Out of State Moving Quote</a>";
+                echo "<a href='out-of-state-moving.php' class='btn btn-primary'>Check Out Our Out of State Moving Page</a>";
             } elseif ($_SESSION['InquiryType'] == "Storage Quote") {
-                echo "<a href='storage-services.php' class='btn btn-primary'>Learn More About Storage Services</a>";
+                echo "<a href='storage-services.php' class='btn btn-primary'>Check Out Our Storage Services Page</a>";
             } elseif ($_SESSION['InquiryType'] == "General Inquiry") {
                 echo "<a href='faq.php' class='btn btn-primary'>Check Out Our Frequently Asked Questions</a>";
             }
@@ -101,8 +101,6 @@ echo $Nav;
         <p class="error"><?php echo $errorMessage; ?></p>
     <?php } ?>
 
-
-        <br><br>
         <input type="hidden" name="SubmissionID" id="SubmissionID">
         
         <label for="name">Name (Required):</label>
