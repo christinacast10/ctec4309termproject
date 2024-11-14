@@ -4,8 +4,8 @@ include("dbconn.inc.php"); // Database connection
 include("shared.php"); // Shared contents like header, footer, etc.
 $conn = dbConnect();
 
-$successMessage = ""; // To show a success message after submission
-$errorMessage = ""; // To show an error if submission fails
+$successMessage = ""; 
+$errorMessage = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input fields

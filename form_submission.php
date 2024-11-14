@@ -70,11 +70,11 @@ if (isset($_POST['Submit'])) {
 
                 // display success output, got rid of foreach loop to display the fields individually
                 $output = "<span class='success'>Success!</span><p>The following information has been saved in the database:</p>";
-                $output .= "<b>URL:</b> " . htmlentities($Name) . "<br>";
-                $output .= "<b>Anchor Text:</b> " . htmlentities($Email) . "<br>";
-                $output .= "<b>Category:</b> " . htmlentities($Phone) . "<br>";
-				$output .= "<b>Anchor Text:</b> " . htmlentities($InquiryType) . "<br>";
-                $output .= "<b>Category:</b> " . htmlentities($Message) . "<br>";
+                $output .= "<b>Name:</b> " . htmlentities($Name) . "<br>";
+                $output .= "<b>Email:</b> " . htmlentities($Email) . "<br>";
+                $output .= "<b>Phone:</b> " . htmlentities($Phone) . "<br>";
+				$output .= "<b>Inquiry Type:</b> " . htmlentities($InquiryType) . "<br>";
+                $output .= "<b>Message:</b> " . htmlentities($Message) . "<br>";
                 $output .= "<p>Back to the <a href='admin_home.php'>Admin Panel</a></p>";
             } else {
                 $output = "<div class='error'>Database operation failed. Please contact the webmaster.</div>";
@@ -87,9 +87,9 @@ if (isset($_POST['Submit'])) {
     } else {
         // Missing required fields
         $output = "<div class='error'><p>The following required fields are missing in your form submission. Please check your form again and fill them out. <br>Thank you.<br>\n<ul>\n";
-        if (empty($Name)) $output .= "<li>URL</li>";
-        if (empty($Email)) $output .= "<li>Anchor Text</li>";
-        if ($InquiryType == 0) $output .= "<li>Category</li>";
+        if (empty($Name)) $output .= "<li>Name</li>";
+        if (empty($Email)) $output .= "<li>Email</li>";
+        if ($InquiryType == 0) $output .= "<li>Inquiry Type</li>";
         $output .= "</ul></div>\n";
     }
 }
@@ -99,8 +99,8 @@ function InquiryTypeOptionList($selectedType){
     $list = ""; // placeholder for Inquiry Type options list
     global $conn;
     
-    // Static Inquiry Type options for simplicity (add more types as necessary)
-    $types = ['General Inquiry', 'Product Inquiry', 'Feedback', 'Support'];
+    // Static Inquiry Type options for simplicity (not ideal)
+    $types = ['General Inquiry', 'Moving Quote',  'Out of State Quote', 'Feedback', 'Support'];
 
     foreach ($types as $type) {
         $selected = ($type == $selectedType) ? "selected" : "";
