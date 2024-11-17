@@ -55,7 +55,7 @@ echo $HeroSlideshow;
             <h3>Local DFW Moving</h3>
             <p>Expert local moving services throughout the DFW area, tailored to your needs.</p>
         </a>
-        <a href="longdistance.html" class="service-item">
+        <a href="longdistance.php" class="service-item">
             <img src="longdistancemoving.jpg" alt="Long Distance Moving Image">
             <h3>Long Distance Moving</h3>
             <p>Reliable long-distance moving services to safely relocate you to your new home.</p>
@@ -213,13 +213,10 @@ echo $HeroSlideshow;
     </div>
 </section>
 
-<section class="cta-section">
-    <div class="cta-content">
-        <h2>Get Your Free Moving Quote Today!</h2>
-        <p>Whether you're moving locally or long-distance, we're here to make your move stress-free. Get in touch now and let us provide you with an accurate, no-obligation quote tailored to your needs.</p>
-        <a href="contact-us.html" class="cta-button">Get a Free Quote</a>
-    </div>
-</section>
+<?php
+/////CTA/////
+echo $ctaSection;
+?> 
 
 <!--FAQ-->
 <section class="faq-section">

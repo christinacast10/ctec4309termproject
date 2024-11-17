@@ -44,8 +44,9 @@ echo $Nav;
 ?>
 
 <section class="contact-section">
+    
     <h2 class="contact-heading">Contact Us</h2>
-
+    
     <div class="contact-info">
         <div class="contact-item">
             <h3>Customer Service</h3>
@@ -171,9 +172,11 @@ echo $Nav;
     <!-- Video Review Section -->
     <div class="video-review">
         <h3>Watch Our Client Video Reviews</h3>
+        
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_URL_HERE" title="Video Review" frameborder="0" allowfullscreen></iframe>
         </div>
+        <img src="team.JPG" width="550px">
     </div>
 
     <!-- Google Storefront Linked -->

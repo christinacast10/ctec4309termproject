@@ -122,6 +122,62 @@
     background-color: #d4a10a;
 }
 
+/* About Section Styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
 /* Button Styling */
 .prev, .next {
     position: absolute;
@@ -240,6 +296,7 @@ body {
     text-align: center;
 }
 
+
 .services-section .service-item {
     display: block; 
     text-decoration: none; 
@@ -270,8 +327,8 @@ body {
 
 
 .services-section .service-item:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .services-section .services-grid .service-item img {
@@ -291,6 +348,85 @@ body {
     font-size: 1em;
     line-height: 1.6;
 }
+
+/* Resources Card Styles */
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.2em;
+    color: #274C77;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Newsletter Signup Styles */
+.newsletter-signup {
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.newsletter-signup h3 {
+    font-size: 1.5em;
+    color: #274C77;
+    margin-bottom: 15px;
+}
+
+.newsletter-signup p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter-signup button {
+    padding: 12px 25px;
+    background-color: #FFCC9A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    background-color: #FFB97D;
+}
+
 
 @media (max-width: 900px) {
     .services-grid {
@@ -599,6 +735,7 @@ body {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 12px;
