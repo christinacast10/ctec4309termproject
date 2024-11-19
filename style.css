@@ -45,6 +45,57 @@
     border-radius: 5px; 
 }
 
+/* Dropdown Menu */
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #274C77;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.navbar .dropdown-content a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #FFC107;
+    color: #333333;
+    border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    background-color: #274C77;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 /*SLIDESHOW*/
 .hero-slideshow {
     position: relative;
@@ -123,6 +174,24 @@
 }
 
 /* About Section Styling */
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #274C77;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
 .about-section {
     display: flex;
     align-items: center;
@@ -267,6 +336,30 @@ body {
     line-height: 1.6;
 }
 
+.services {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #274C77;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.services li {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
 .services-section {
     padding: 40px;
     text-align: center;
@@ -347,6 +440,46 @@ body {
     color: #555;
     font-size: 1em;
     line-height: 1.6;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Larger Icon for Packing Section */
+.service-icon-large {
+    font-size: 4.5rem; /* Larger size for the packing icon */
+    color: #007bff; /* Matches other icons for consistency */
+    margin-bottom: 15px;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Resources Card Styles */
@@ -474,6 +607,17 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-area-group a {
+    color: #c20000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-area-group a:hover {
+    color: #274C77; /* Change to match your primary color */
+    text-decoration: underline;
 }
 
 .service-area-group h3 {
@@ -866,6 +1010,193 @@ body {
         height: auto;
     }
 }
+
+.testimonials {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #274C77;
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.free-estimate {
+    background-color: #274C77;
+    color: white;
+    padding: 40px 20px; 
+}
+
+.free-estimate h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.free-estimate p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.free-estimate form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.free-estimate label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.free-estimate input,
+.free-estimate textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.free-estimate button {
+    background-color: #FFC107;
+    color: #333;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.free-estimate button:hover {
+    background-color: #FF9F00;
+}
+
+.aligned-list {
+    display: flex;           
+    flex-direction: column;  
+    align-items: flex-start; 
+    margin: 0% 40%;          
+    padding: 0;              
+    list-style: none;        
+    text-align: left;        
+}
+
+.aligned-list li {
+    display: flex;           
+    align-items: center;     
+    margin-bottom: 10px;     
+    font-weight: bold;       
+}
+
+.aligned-list li .star {
+    color: gold;             
+    margin-right: 10px;      
+    font-size: 1.2em;        
+}
+
+.targeted-areas {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.targeted-areas h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.targeted-areas p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.areas-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.areas-list li {
+    font-size: 1.1rem;
+    color: #333;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.areas-list li .area-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #0078D7;
+}
+
+/* Hover Effect */
+.areas-list li:hover {
+    background-color: #FFC107; 
+    color: #274C77;           
+    transform: translateY(-3px); 
+}
+
+.areas-list li:hover .area-icon {
+    color: #274C77;           
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    color: #274C77;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
 /*FOOTER*/
 footer {
     width: 100%; 

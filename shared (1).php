@@ -42,22 +42,6 @@ $HeroSlideshow = "
 
 ";
 
-$areasofserviceslideshow = "
-<div class='hero-slideshow'>
-    <div class='hero-slide'>
-        <div class='hero-image-wrapper'>
-            <img src='dallas.jpg' alt='Dallas Skyline'>
-            <div class='hero-text'>
-                <h1>Areas We Serve</h1>
-                <p>From Dallas to surrounding cities, we’ve got your move covered.</p>
-                <a href='services.php' class='hero-button'>Explore Our Services</a>
-            </div>
-        </div>
-    </div>
-    <a class='prev' onclick='nextSlide(-1)'>&#10094;</a>
-    <a class='next' onclick='nextSlide(1)'>&#10095;</a>
-</div>";
-
 $HeroSlideshowDistance = "
 <div class='hero-slideshow'>
     <div class='hero-slide'>
@@ -165,20 +149,6 @@ $Nav = "
         <li><a href='resources.php'>Resources</a></li>
         <li><a href='about.php'>About Us</a></li>
         <li><a href='contact.php'>Contact Us</a></li>
-        <li class='dropdown'>
-            <a href='#'>Areas of Service</a>
-            <ul class='dropdown-content'>
-                <li><a href='northdfw.php'>North DFW Metroplex</a></li>
-                <li><a href='centraldfw.php'>Central DFW Metroplex</a></li>
-                <li><a href='westdfw.php'>West DFW Metroplex</a></li>
-                <li><a href='eastdfw.php'>East DFW Metroplex</a></li>
-                <li><a href='southdfw.php'>South DFW Metroplex</a></li>
-                <li><a href='dentondfw.php'>Denton County</a></li>
-                <li><a href='tarrantdfw.php'>Tarrant County</a></li>
-                <li><a href='ellisdfw.php'>Ellis County</a></li>
-                <li><a href='otherdfw.php'>Other Areas</a></li>
-            </ul>
-        </li>
     </ul>
 </nav>
 ";
@@ -204,3 +174,4 @@ $Footer = "
     </div>
 </footer>
 ";
+
