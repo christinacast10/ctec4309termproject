@@ -1266,13 +1266,13 @@ footer a {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;  
-    font-weight: bold;  
-    font-size: 3rem;  
+    font-weight: bold; 
+    text-align: center; 
 }
 
 .success p {
     margin: 0; 
-    font-size: 14px; 
+    font-size: 20px; 
 }
 
 /* Admin Table */
