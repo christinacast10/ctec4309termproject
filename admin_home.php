@@ -106,7 +106,7 @@ $conn->close();
 <?= $admin_nav ?>
     <div class="container">
         <h3>Contact Form Submissions</h3>
-        <?php echo $output; ?>
+        <?php echo $output; ?> <!-- Output the table with data -->
     </div>
 </main>
     </div>      

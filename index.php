@@ -45,12 +45,12 @@ echo $HeroSlideshow;
 <section class="services-section">
     <h2>Services We Provide</h2>
     <div class="services-grid">
-        <a href="packing.html" class="service-item">
+        <a href="packing.php" class="service-item">
             <img src="packing2.jpg" alt="Packing Supplies Image">
             <h3>Packing Help & Supplies</h3>
             <p>Comprehensive packing assistance and top-quality supplies to ensure your belongings are secure.</p>
         </a>
-        <a href="localmove.html" class="service-item">
+        <a href="localdistance.php" class="service-item">
             <img src="localmove.jpg" alt="Local Moving Image">
             <h3>Local DFW Moving</h3>
             <p>Expert local moving services throughout the DFW area, tailored to your needs.</p>
@@ -60,17 +60,17 @@ echo $HeroSlideshow;
             <h3>Long Distance Moving</h3>
             <p>Reliable long-distance moving services to safely relocate you to your new home.</p>
         </a>
-        <a href="storage.html" class="service-item">
+        <a href="storage.php" class="service-item">
             <img src="storage.jpg" alt="Warehouse Storage Image">
             <h3>Warehouse Storage</h3>
             <p>Secure and accessible warehouse storage for short or long-term needs.</p>
         </a>
-        <a href="junkremoval.html" class="service-item">
+        <a href="junkremoval.php" class="service-item">
             <img src="waste.jpg" alt="Junk Removal Image">
             <h3>Junk Removal</h3>
             <p>Quick and efficient junk removal services to help you declutter and reclaim your space.</p>
         </a>
-        <a href="transport.html" class="service-item">
+        <a href="autotransport.php" class="service-item">
             <img src="tow.jpg" alt="Tow Image">
             <h3>RV/Auto Transport</h3>
             <p>Specialized transportation services for RVs and autos across the region.</p>
@@ -83,133 +83,133 @@ echo $HeroSlideshow;
     <p>Explore the cities and communities we proudly serve throughout the Dallas-Fort Worth Metroplex and beyond.</p>
     
     <div class="service-areas-grid">
-        <div class="service-area-group">
-            <h3>North DFW Metroplex</h3>
-            <ul>
-                <li><a href="service-area/addison.html">Addison</a></li>
-                <li><a href="service-area/allen.html">Allen</a></li>
-                <li><a href="service-area/aubrey.html">Aubrey</a></li>
-                <li><a href="service-area/carrollton.html">Carrollton</a></li>
-                <li><a href="service-area/frisco.html">Frisco</a></li>
-                <li><a href="service-area/little-elm.html">Little Elm</a></li>
-                <li><a href="service-area/plano.html">Plano</a></li>
-                <li><a href="service-area/prosper.html">Prosper</a></li>
-                <li><a href="service-area/the-colony.html">The Colony</a></li>
-            </ul>
-        </div>
-        
-        <div class="service-area-group">
-            <h3>Central DFW Metroplex</h3>
-            <ul>
-                <li><a href="service-area/dallas.html">Dallas</a></li>
-                <li><a href="service-area/farmers-branch.html">Farmers Branch</a></li>
-                <li><a href="service-area/irving.html">Irving</a></li>
-                <li><a href="service-area/university-park.html">University Park</a></li>
-                <li><a href="service-area/highland-park.html">Highland Park</a></li>
-                <li><a href="service-area/richardson.html">Richardson</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>West DFW Metroplex</h3>
-            <ul>
-                <li><a href="service-area/aledo.html">Aledo</a></li>
-                <li><a href="service-area/arlington.html">Arlington</a></li>
-                <li><a href="service-area/benbrook.html">Benbrook</a></li>
-                <li><a href="service-area/burleson.html">Burleson</a></li>
-                <li><a href="service-area/crowley.html">Crowley</a></li>
-                <li><a href="service-area/fort-worth.html">Fort Worth</a></li>
-                <li><a href="service-area/granbury.html">Granbury</a></li>
-                <li><a href="service-area/haltom-city.html">Haltom City</a></li>
-                <li><a href="service-area/hudson-oaks.html">Hudson Oaks</a></li>
-                <li><a href="service-area/keller.html">Keller</a></li>
-                <li><a href="service-area/weatherford.html">Weatherford</a></li>
-                <li><a href="service-area/white-settlement.html">White Settlement</a></li>
-                <li><a href="service-area/willow-park.html">Willow Park</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>East DFW Metroplex</h3>
-            <ul>
-                <li><a href="service-area/garland.html">Garland</a></li>
-                <li><a href="service-area/mesquite.html">Mesquite</a></li>
-                <li><a href="service-area/rowlett.html">Rowlett</a></li>
-                <li><a href="service-area/rockwall.html">Rockwall</a></li>
-                <li><a href="service-area/wylie.html">Wylie</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>South DFW Metroplex</h3>
-            <ul>
-                <li><a href="service-area/desoto.html">DeSoto</a></li>
-                <li><a href="service-area/duncanville.html">Duncanville</a></li>
-                <li><a href="service-area/ennis.html">Ennis</a></li>
-                <li><a href="service-area/glenn-heights.html">Glenn Heights</a></li>
-                <li><a href="service-area/mansfield.html">Mansfield</a></li>
-                <li><a href="service-area/red-oak.html">Red Oak</a></li>
-                <li><a href="service-area/waxahachie.html">Waxahachie</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>Denton County</h3>
-            <ul>
-                <li><a href="service-area/argyle.html">Argyle</a></li>
-                <li><a href="service-area/denton.html">Denton</a></li>
-                <li><a href="service-area/double-oak.html">Double Oak</a></li>
-                <li><a href="service-area/flower-mound.html">Flower Mound</a></li>
-                <li><a href="service-area/highland-village.html">Highland Village</a></li>
-                <li><a href="service-area/justin.html">Justin</a></li>
-                <li><a href="service-area/krum.html">Krum</a></li>
-                <li><a href="service-area/lake-dallas.html">Lake Dallas</a></li>
-                <li><a href="service-area/lewisville.html">Lewisville</a></li>
-                <li><a href="service-area/northlake.html">Northlake</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>Tarrant County</h3>
-            <ul>
-                <li><a href="service-area/bedford.html">Bedford</a></li>
-                <li><a href="service-area/blue-mound.html">Blue Mound</a></li>
-                <li><a href="service-area/colleyville.html">Colleyville</a></li>
-                <li><a href="service-area/euless.html">Euless</a></li>
-                <li><a href="service-area/hurst.html">Hurst</a></li>
-                <li><a href="service-area/north-richland-hills.html">North Richland Hills</a></li>
-                <li><a href="service-area/pantego.html">Pantego</a></li>
-                <li><a href="service-area/richland-hills.html">Richland Hills</a></li>
-                <li><a href="service-area/saginaw.html">Saginaw</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>Ellis County</h3>
-            <ul>
-                <li><a href="service-area/alvarado.html">Alvarado</a></li>
-                <li><a href="service-area/italy.html">Italy</a></li>
-                <li><a href="service-area/midlothian.html">Midlothian</a></li>
-                <li><a href="service-area/waxahachie.html">Waxahachie</a></li>
-            </ul>
-        </div>
-
-        <div class="service-area-group">
-            <h3>Other Service Areas</h3>
-            <ul>
-                <li><a href="service-area/blue-ridge.html">Blue Ridge</a></li>
-                <li><a href="service-area/cleburne.html">Cleburne</a></li>
-                <li><a href="service-area/coppell.html">Coppell</a></li>
-                <li><a href="service-area/corinth.html">Corinth</a></li>
-                <li><a href="service-area/cross-roads.html">Cross Roads</a></li>
-                <li><a href="service-area/joshua.html">Joshua</a></li>
-                <li><a href="service-area/kennedale.html">Kennedale</a></li>
-                <li><a href="service-area/lake-worth.html">Lake Worth</a></li>
-                <li><a href="service-area/lantana.html">Lantana</a></li>
-                <li><a href="service-area/trophy-club.html">Trophy Club</a></li>
-            </ul>
-        </div>
+    <div class="service-area-group">
+        <h3><a href="northdfw.php">North DFW Metroplex</a></h3>
+        <ul>
+            <li>Addison</li>
+            <li>Allen</li>
+            <li>Aubrey</li>
+            <li>Carrollton</li>
+            <li>Frisco</li>
+            <li>Little Elm</li>
+            <li>Plano</li>
+            <li>Prosper</li>
+            <li>The Colony</li>
+        </ul>
     </div>
+    
+    <div class="service-area-group">
+        <h3><a href="centraldfw.php">Central DFW Metroplex</a></h3>
+        <ul>
+            <li>Dallas</li>
+            <li>Farmers Branch</li>
+            <li>Irving</li>
+            <li>University Park</li>
+            <li>Highland Park</li>
+            <li>Richardson</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="westdfw.php">West DFW Metroplex</a></h3>
+        <ul>
+            <li>Aledo</li>
+            <li>Arlington</li>
+            <li>Benbrook</li>
+            <li>Burleson</li>
+            <li>Crowley</li>
+            <li>Fort Worth</li>
+            <li>Granbury</li>
+            <li>Haltom City</li>
+            <li>Hudson Oaks</li>
+            <li>Keller</li>
+            <li>Weatherford</li>
+            <li>White Settlement</li>
+            <li>Willow Park</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="eastdfw.php">East DFW Metroplex</a></h3>
+        <ul>
+            <li>Garland</li>
+            <li>Mesquite</li>
+            <li>Rowlett</li>
+            <li>Rockwall</li>
+            <li>Wylie</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="southdfw.php">South DFW Metroplex</a></h3>
+        <ul>
+            <li>DeSoto</li>
+            <li>Duncanville</li>
+            <li>Ennis</li>
+            <li>Glenn Heights</li>
+            <li>Mansfield</li>
+            <li>Red Oak</li>
+            <li>Waxahachie</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="dentondfw.php">Denton County</a></h3>
+        <ul>
+            <li>Argyle</li>
+            <li>Denton</li>
+            <li>Double Oak</li>
+            <li>Flower Mound</li>
+            <li>Highland Village</li>
+            <li>Justin</li>
+            <li>Krum</li>
+            <li>Lake Dallas</li>
+            <li>Lewisville</li>
+            <li>Northlake</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="tarrantdfw.php">Tarrant County</a></h3>
+        <ul>
+            <li>Bedford</li>
+            <li>Blue Mound</li>
+            <li>Colleyville</li>
+            <li>Euless</li>
+            <li>Hurst</li>
+            <li>North Richland Hills</li>
+            <li>Pantego</li>
+            <li>Richland Hills</li>
+            <li>Saginaw</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="ellisdfw.php">Ellis County</a></h3>
+        <ul>
+            <li>Alvarado</li>
+            <li>Italy</li>
+            <li>Midlothian</li>
+            <li>Waxahachie</li>
+        </ul>
+    </div>
+
+    <div class="service-area-group">
+        <h3><a href="otherdfw.php">Other Service Areas</a></h3>
+        <ul>
+            <li>Blue Ridge</li>
+            <li>Cleburne</li>
+            <li>Coppell</li>
+            <li>Corinth</li>
+            <li>Cross Roads</li>
+            <li>Joshua</li>
+            <li>Kennedale</li>
+            <li>Lake Worth</li>
+            <li>Lantana</li>
+            <li>Trophy Club</li>
+        </ul>
+    </div>
+</div>
 </section>
 
 <?php

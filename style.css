@@ -651,6 +651,70 @@ body {
     }
 }
 
+/* individual services */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card Header Styling */
+  .card-header {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .card-header h2 {
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  /* Card Body Styling */
+  .card-body {
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  /* Section Titles */
+  .card-body h3 {
+    font-size: 20px;
+    color: #007BFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Cost Section */
+  .cost-section p {
+    margin-bottom: 10px;
+  }
+  
+  /* Charge Example */
+  .charge-example ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .charge-example li {
+    margin-bottom: 8px;
+  }
+  
+  .charge-example p {
+    margin-bottom: 15px;
+  }
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .no-bullets li {
+    margin-bottom: 8px;
+  }
+
 /*CTA*/
 
 .cta-section {
@@ -1266,13 +1330,13 @@ footer a {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;  
-    font-weight: bold; 
-    text-align: center; 
+    font-weight: bold;  
+    font-size: 3rem;  
 }
 
 .success p {
     margin: 0; 
-    font-size: 20px; 
+    font-size: 14px; 
 }
 
 /* Admin Table */

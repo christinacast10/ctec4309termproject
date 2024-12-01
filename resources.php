@@ -18,7 +18,7 @@ echo $HeroSlideshow;
 
 <!-- Educational Resources Section -->
 <div class="container">
-    <h2 style="text-align:center;">Educational Resources</h2>
+    <h2>Educational Resources</h2>
     <div class="resource-cards">
         <!-- Row 1 of Cards -->
         <div class="card">

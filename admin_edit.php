@@ -16,6 +16,8 @@ $conn = dbConnect();
 // Process only if there is any submission
 if (isset($_POST['Submit'])) {
 
+    echo "<script>console.log('111');</script>"; // DELETE MEEEEEE
+	// ==========================
 	//validate user input
 	
 	// set up the required array 
