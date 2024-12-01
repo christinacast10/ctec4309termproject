@@ -421,7 +421,7 @@ $Footer = "
         <p>&copy; " . date("Y") . " Midnight Hour Movers. All rights reserved.</p>
         <p>This website was created as a term project for CTEC 4309 at UT Arlington.</p>
         <p>Contact us: <a href='mailto:info@midnighthourmovers.com'>info@midnighthourmovers.com</a> | Phone: (817) 399-1300</p>
-        <p><a href='admin.php' target='_blank'>Admin Login</a> | <a href='reviews.php'> Submit A Review</a></p>
+        <p><a href='admin.php' target='_blank'>Admin Login</a> | <a href='reviews.php'>Submit A Review</a> | <a href='privacypolicy.php'>Privacy Policy</a></p>
     </div>
 </footer>
 ";
