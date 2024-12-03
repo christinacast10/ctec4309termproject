@@ -13,8 +13,6 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
     $username = $_POST['username'];
     $password = $_POST['password'];
     
-    //echo "u: $username - p: $password <br>";
-    
     // add additional validation here if necessary
     
     // validate user name and password

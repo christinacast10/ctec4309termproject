@@ -1,4 +1,4 @@
-
+/* CTEC 4309 Term Project Manny Arellano and Christina Castillo */
 
 .navbar {
     width: 100%;
@@ -450,8 +450,8 @@ body {
 
 /* Larger Icon for Packing Section */
 .service-icon-large {
-    font-size: 4.5rem; /* Larger size for the packing icon */
-    color: #007bff; /* Matches other icons for consistency */
+    font-size: 4.5rem;
+    color: #007bff;
     margin-bottom: 15px;
 }
 
@@ -616,7 +616,7 @@ body {
 }
 
 .service-area-group a:hover {
-    color: #274C77; /* Change to match your primary color */
+    color: #274C77;
     text-decoration: underline;
 }
 

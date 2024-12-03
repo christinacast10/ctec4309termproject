@@ -8,7 +8,7 @@ $successMessage = "";
 $errorMessage = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and validate input fields
+    // Sanitize and validate input fields to prevent injection attack
     $Name = $conn->real_escape_string(trim($_POST['Name']));
     $Email = $conn->real_escape_string(trim($_POST['Email']));
     $Phone = $conn->real_escape_string(trim($_POST['Phone']));

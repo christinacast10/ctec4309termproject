@@ -1,8 +1,11 @@
 <?php
+// CTEC 4309 Term Project Manuel Arellano and Christina Castillo
 /////HEADER/////
 $Head = "
 <head>
-    <title>Midnight Hour Movers</title>
+    <title>Midnight Hour Movers - Professional Moving & Storage Services</title>
+    <meta name='description' content='Midnight Hour Movers offers reliable moving and storage services, including local and out-of-state moves, packing, and more. Contact us today!'>
+    <meta name='keywords' content='moving company, storage services, local movers, out-of-state moves, packing services, Dallas movers, reliable moving company'>
     <link rel='stylesheet' href='style.css' type='text/css'>
 </head>
 ";
@@ -361,7 +364,7 @@ $ctaSection = '
     <div class="cta-content">
         <h2>Get Your Free Moving Quote Today!</h2>
         <p>Whether you\'re moving locally or long-distance, we\'re here to make your move stress-free. Get in touch now and let us provide you with an accurate, no-obligation quote tailored to your needs.</p>
-        <a href="contact.php" class="cta-button">Get a Free Quote</a>
+        <a href="quote.php" class="cta-button">Get a Free Quote</a>
     </div>
 </section>
 ';

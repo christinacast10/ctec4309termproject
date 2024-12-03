@@ -99,7 +99,7 @@ function InquiryTypeOptionList($selectedType){
     $list = ""; // placeholder for Inquiry Type options list
     global $conn;
     
-    // Static Inquiry Type options for simplicity (add more types as necessary)
+    // Static Inquiry Type options
     $types = ['General Inquiry', 'Product Inquiry', 'Feedback', 'Support'];
 
     foreach ($types as $type) {
