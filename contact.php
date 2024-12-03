@@ -88,11 +88,11 @@ echo $Nav;
         // Check if the session has an InquiryType and display the corresponding button
         if (isset($_SESSION['InquiryType'])) {
             if ($_SESSION['InquiryType'] == "Out of State Moving Quote") {
-                echo "<a href='out-of-state-moving.php' class='btn btn-primary'>Check Out Our Out of State Moving Page</a>";
+                echo "<a href='longdistance.php' class='btn btn-primary'>Check Out Our Out of State Moving Page</a>";
             } elseif ($_SESSION['InquiryType'] == "Storage Quote") {
-                echo "<a href='storage-services.php' class='btn btn-primary'>Check Out Our Storage Services Page</a>";
+                echo "<a href='storage.php' class='btn btn-primary'>Check Out Our Storage Services Page</a>";
             } elseif ($_SESSION['InquiryType'] == "General Inquiry") {
-                echo "<a href='faq.php' class='btn btn-primary'>Check Out Our Frequently Asked Questions</a>";
+                echo "<a href='index.php' class='btn btn-primary'>Check Out Our Frequently Asked Questions</a>";
             }
             // Clear the session variable
             unset($_SESSION['InquiryType']);
