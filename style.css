@@ -57,8 +57,10 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
-    padding: 0;
-    margin-top: 5px;
+    padding: 0;    
+    margin: 0; 
+    top: 100%; 
+    left: 0;
 }
 
 .navbar .dropdown-content a {
